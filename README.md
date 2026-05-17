@@ -1,6 +1,6 @@
 # Gemma 4 Good ReXVQA
 
-This repository contains the code for a Gemma 4 Good project on chest X-ray visual question answering with ReXVQA. It was developed for the [ReXrank Challenge V2.0](https://rexrank.ai/), which evaluates VQA systems on radiology studies from ReXGradient and ReXVQA.
+This repository contains the code for a [Gemma 4 Good Hackathon](https://www.kaggle.com/competitions/gemma-4-good-hackathon/rules) project on chest X-ray visual question answering. It was developed to compete on [ReXrank Challenge V2.0](https://rexrank.ai/), which evaluates VQA systems on radiology studies from ReXGradient.
 
 The project includes data preparation utilities, inference runners, evaluation code, a Gradio demo, and an experimental self-distillation fine-tuning pipeline for Gemma-style vision-language models.
 
