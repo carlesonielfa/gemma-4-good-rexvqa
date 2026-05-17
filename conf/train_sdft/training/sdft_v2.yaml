@@ -1,0 +1,37 @@
+# @package training
+
+trainer:
+  learning_rate: 2.0e-5
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  weight_decay: 0.01
+  warmup_ratio: 0.03
+  lr_scheduler_type: cosine
+  optim: adamw_8bit
+  logging_steps: 5
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 8
+  num_generations: 4
+  max_prompt_length: 1024
+  max_completion_length: 100
+  max_steps: 12000
+  save_steps: 500
+  max_grad_norm: 1.0
+  bf16: true
+  gradient_checkpointing: false
+  generate_from_teacher: true
+  dataloader_num_workers: 4
+  teacher_prompt_template: |-
+    {prompt}
+
+    An expert radiologist has reviewed the case. Here are his impression, findings, correct answer and explanation:
+    {privileged_context}
+
+    Regenerate the target as exactly two lines: one concise answer explanation sentence, then exactly one final answer block: <answer>A|B|C|D</answer>.
+
+completion_logging:
+  enabled: false
+  num_completions_to_print: 4
+  num_teacher_completions_to_log: 4
+
+resume_from_checkpoint: null

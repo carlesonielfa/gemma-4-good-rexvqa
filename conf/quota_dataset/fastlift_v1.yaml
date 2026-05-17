@@ -1,0 +1,23 @@
+# @package quota_dataset
+
+name: fastlift_v1
+input_file: data/ReXVQA/metadata/train_vqa_data.json
+output_file: data/ReXVQA/metadata/train_quota_fastlift_v1.json
+summary_file: data/ReXVQA/metadata/train_quota_fastlift_v1_summary.json
+
+max_cases_per_study: 2
+max_subcategory_fraction: 0.4
+seed: 0
+
+target_total: 96000
+
+category_distribution:
+  Lung and Pleural Opacity: 0.25
+  Heart: 0.1875
+  Tubes and Lines: 0.15625
+  Exam/Patient Information: 0.09375
+  Spine: 0.078125
+  Negation: 0.078125
+  Quality of Exams: 0.078125
+  Pulmonary Vascularity: 0.078125
+  other: 0.0

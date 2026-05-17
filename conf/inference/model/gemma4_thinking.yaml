@@ -1,0 +1,7 @@
+# @package model
+
+name: gemma4_thinking
+model_name: google/gemma-4-E2B-it
+adapter_path: null
+enable_thinking: true
+prompt_style: sdft_explanation

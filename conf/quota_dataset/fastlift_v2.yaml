@@ -1,0 +1,49 @@
+# @package quota_dataset
+
+name: fastlift_v2
+input_file: data/ReXVQA/metadata/train_vqa_data.json
+output_file: data/ReXVQA/metadata/train_quota_fastlift_v2.json
+summary_file: data/ReXVQA/metadata/train_quota_fastlift_v2_summary.json
+
+max_cases_per_study: 4
+max_subcategory_fraction: 0.4
+seed: 0
+
+target_total: 96000
+
+category_distribution:
+  Aorta: 0.0355
+  Joint: 0.0331
+  Exam/Patient Information: 0.0324
+  Clavicle: 0.0324
+  Pleural Effusion: 0.0316
+  Humerus: 0.0304
+  Spine: 0.0292
+  Diaphragm: 0.0287
+  Lung Volume: 0.027
+  Quality of Exams: 0.0268
+  Pleural Thickening: 0.026
+  Non-Therapeutic Internal Foreign Bodies: 0.0251
+  Infectious Disease: 0.025
+  Miscellaneous Diagnosis: 0.0246
+  Heart: 0.0245
+  Miscellaneous Bone Abnormality: 0.0241
+  Implanted Devices: 0.0226
+  Abdomen: 0.0224
+  Tubes and Lines: 0.0211
+  Lung and Pleural Opacity: 0.0207
+  Neck/Chest Wall Soft Tissue: 0.0206
+  Other Pulmonary Diagnosis: 0.0205
+  Negation: 0.0193
+  Pulmonary Neoplasm: 0.0151
+  Rib: 0.0145
+  Lung and Pleural Lucency: 0.0141
+  Pulmonary Vascularity: 0.0117
+  Sternum: 0.0097
+  Airway: 0.0093
+  Mediastinum: 0.008
+  Cardiac Disease: 0.0071
+  Bone: 0.006
+  Skeletal Structures: 0.0004
+  Bony Thorax: 0.0
+  other: 0.3

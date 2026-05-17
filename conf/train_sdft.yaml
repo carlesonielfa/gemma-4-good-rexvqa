@@ -1,0 +1,20 @@
+defaults:
+  - train_sdft/data: quota_fastlift_v2
+  - train_sdft/dataset: sdft_explanation_rich
+  - train_sdft/model: gemma4_lora
+  - train_sdft/training: sdft_v2
+  - train_sdft/eval: disabled
+  - train_sdft/logging: trackio_tensorboard
+  - optional train_sdft/experiment: null
+  - _self_
+
+experiment:
+  name: sdft_explanation_gemma4
+  seed: 3407
+
+hydra:
+  run:
+    dir: results/sdft_runs/${now:%Y%m%d-%H%M%S}_${experiment.name}
+  sweep:
+    dir: results/sdft_sweeps/${now:%Y%m%d-%H%M%S}
+    subdir: ${hydra.job.num}_${hydra.job.override_dirname}

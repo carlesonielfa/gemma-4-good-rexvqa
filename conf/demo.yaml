@@ -1,0 +1,19 @@
+defaults:
+  - inference/model: gemma4_trained
+  - inference/runtime: vllm
+  - inference/run: default
+  - _self_
+
+data:
+  bundled_examples_dir: demo_assets/examples
+
+ui:
+  title: ReXVQA Chest X-ray Demo
+  server_name: 0.0.0.0
+  server_port: 7860
+  share: false
+  show_error: true
+
+hydra:
+  run:
+    dir: results/demo_runs/${now:%Y%m%d-%H%M%S}_${model.name}_${runtime.backend}

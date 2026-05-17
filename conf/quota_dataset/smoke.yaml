@@ -1,0 +1,17 @@
+# @package quota_dataset
+
+name: smoke
+input_file: data/ReXVQA/metadata/train_vqa_data.json
+output_file: results/dataset_builds/smoke/train_quota_smoke.json
+summary_file: results/dataset_builds/smoke/train_quota_smoke_summary.json
+
+max_cases_per_study: 2
+max_subcategory_fraction: 0.4
+seed: 0
+
+target_total: 4
+
+category_distribution:
+  Heart: 0.5
+  Spine: 0.5
+  other: 0.0

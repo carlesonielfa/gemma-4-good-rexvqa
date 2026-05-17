@@ -1,0 +1,7 @@
+# @package dataset
+
+max_images: 1
+image_size: [512, 512]
+prompt_style: sdft_explanation
+privileged_context_template: |-
+  {correct_answer_explanation}

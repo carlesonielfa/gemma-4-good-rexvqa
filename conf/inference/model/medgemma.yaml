@@ -1,0 +1,7 @@
+# @package model
+
+name: medgemma
+model_name: google/medgemma-4b-it
+adapter_path: null
+enable_thinking: false
+prompt_style: standard

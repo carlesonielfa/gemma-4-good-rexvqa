@@ -1,0 +1,8 @@
+# @package run
+
+batch_size: 64
+max_new_tokens: 2048
+checkpoint_interval: 64
+task: mcq
+output_root: results
+output_file: null

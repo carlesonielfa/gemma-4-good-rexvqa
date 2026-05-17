@@ -1,0 +1,7 @@
+# @package model
+
+name: gemma4
+model_name: unsloth/gemma-4-E2B-it
+adapter_path: null
+enable_thinking: false
+prompt_style: standard

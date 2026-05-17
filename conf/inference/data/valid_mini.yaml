@@ -1,0 +1,4 @@
+# @package data
+
+input_json_file: data/ReXVQA/metadata/valid_mini_vqa_data.json
+image_root: data/ReXVQA/deid_png

@@ -1,0 +1,13 @@
+defaults:
+  - inference/data: valid
+  - inference/model: medgemma
+  - inference/runtime: vllm
+  - inference/run: default
+  - _self_
+
+hydra:
+  run:
+    dir: results/inference_runs/${now:%Y%m%d-%H%M%S}_${model.name}_${runtime.backend}
+  sweep:
+    dir: results/inference_sweeps/${now:%Y%m%d-%H%M%S}
+    subdir: ${hydra.job.num}_${hydra.job.override_dirname}

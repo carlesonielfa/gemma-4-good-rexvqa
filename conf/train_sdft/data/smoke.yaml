@@ -1,0 +1,4 @@
+# @package data
+
+subset_file: results/dataset_builds/smoke/train_quota_smoke.json
+image_root: data/ReXVQA/deid_png

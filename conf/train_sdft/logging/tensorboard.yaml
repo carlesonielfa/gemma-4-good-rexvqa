@@ -1,0 +1,4 @@
+# @package logging
+
+report_to:
+  - tensorboard

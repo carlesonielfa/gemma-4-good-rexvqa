@@ -1,0 +1,4 @@
+# @package data
+
+subset_file: data/ReXVQA/metadata/train_quota_fastlift_v2.json
+image_root: data/ReXVQA/deid_png

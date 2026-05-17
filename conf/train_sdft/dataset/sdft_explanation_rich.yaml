@@ -1,0 +1,10 @@
+# @package dataset
+
+max_images: 1
+image_size: [512, 512]
+prompt_style: sdft_explanation
+privileged_context_template: |-
+  Findings: {Findings}
+  Impression: {Impression}
+  Correct answer: {correct_answer}
+  Explanation: {correct_answer_explanation}

@@ -1,0 +1,9 @@
+# @package eval
+
+enabled: true
+input_json_file: data/ReXVQA/metadata/valid_mini_vqa_data.json
+strategy: steps
+steps: 3000
+on_start: true
+batch_size: 4
+max_new_tokens: 100

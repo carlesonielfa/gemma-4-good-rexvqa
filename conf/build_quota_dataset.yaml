@@ -1,0 +1,10 @@
+defaults:
+  - quota_dataset: fastlift_v2
+  - _self_
+
+hydra:
+  run:
+    dir: results/dataset_builds/${now:%Y%m%d-%H%M%S}_${quota_dataset.name}
+  sweep:
+    dir: results/dataset_sweeps/${now:%Y%m%d-%H%M%S}
+    subdir: ${hydra.job.num}_${hydra.job.override_dirname}

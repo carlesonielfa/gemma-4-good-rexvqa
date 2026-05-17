@@ -1,0 +1,12 @@
+# @package _global_
+
+defaults:
+  - override /train_sdft/data: quota_fastlift_v2
+  - override /train_sdft/dataset: sdft_explanation_rich
+  - override /train_sdft/model: gemma4_lora
+  - override /train_sdft/training: sdft_v2
+  - override /train_sdft/logging: trackio_tensorboard
+
+experiment:
+  name: sdft_explanation_gemma4_fastlift_v2
+  seed: 3407

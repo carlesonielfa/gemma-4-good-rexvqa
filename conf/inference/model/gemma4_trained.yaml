@@ -1,0 +1,10 @@
+# @package model
+
+name: gemma4
+model_name: unsloth/gemma-4-E2B-it
+adapter_path: results/sdft_runs/20260428-202425_sdft_explanation_gemma4/adapter
+merge_adapter_for_vllm: true
+merged_model_path: null
+merged_model_root: results/merged_models
+enable_thinking: false
+prompt_style: sdft_explanation

@@ -1,0 +1,34 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+.ruff_cache/
+.ty/
+
+# Virtual environments
+.venv
+
+# Local secrets and machine-specific files
+.env
+.env.*
+!.env.example
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Data files
+/data
+/data/
+unsloth_compiled_cache/
+
+# Experiment outputs and model artifacts
+/results/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+checkpoint-*/

@@ -1,0 +1,5 @@
+# @package runtime
+
+backend: transformers
+device: cuda
+attn_implementation: auto

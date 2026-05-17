@@ -1,0 +1,40 @@
+# @package training
+
+trainer:
+  learning_rate: 5.0e-6
+  adam_beta1: 0.9
+  adam_beta2: 0.99
+  weight_decay: 0.1
+  warmup_ratio: 0.1
+  lr_scheduler_type: cosine
+  optim: adamw_8bit
+  logging_steps: 1
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 8
+  num_generations: 2
+  max_prompt_length: 1536
+  max_completion_length: 192
+  max_steps: 4
+  save_steps: 4
+  max_grad_norm: 0.1
+  bf16: true
+  gradient_checkpointing: false
+  distillation_topk: 32
+  generate_from_teacher: true
+  loss_type: dr_grpo
+  teacher_prompt_template: |-
+    {prompt}
+
+    Expert radiologist target explanation:
+    {privileged_context}
+
+    Regenerate the target as exactly two lines:
+    Explanation: one concise sentence.
+    <answer>A|B|C|D</answer>
+
+completion_logging:
+  enabled: true
+  num_completions_to_print: 4
+  num_teacher_completions_to_log: 4
+
+resume_from_checkpoint: null
